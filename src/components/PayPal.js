@@ -17,7 +17,7 @@ export default function Paypal(props) {
             intent: "CAPTURE",
             purchase_units: [
               {
-                description: "Cool looking table",
+                description:  `${props.item}`,
                 amount: {
                   currency_code: `${props.currency}`,
                   value: `${props.value}`,
